@@ -12,7 +12,7 @@ theta = zeros(size(X, 2), 1);
 
 % ---------------------- Sample Solution ----------------------
 
-theta = inv(X' * X) * X' * y
+theta = inv(transpose(X) * X) * transpose(X) * y;
 
 
 % -------------------------------------------------------------
